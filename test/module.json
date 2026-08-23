@@ -1,0 +1,28 @@
+{
+  "id": "bunny-hop",
+  "title": "Bunny Hop",
+  "name": "bunny-hop",
+  "description": "let your token move like bunny.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "regexPie",
+  	  "flags": {
+  		  "github": "regexPie"
+  	  }
+    }
+  ],
+  "esmodules": [
+    "main.js"
+  ],
+  "url": "https://github.com/regex-pie",
+  "download": "#",
+  "manifest": "#",
+  "bugs": "#",
+  
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "socket": true
+}
