@@ -144,10 +144,20 @@ async function playHopPath(token, waypoints) {
 // ============================================================
 function handleTokenMoveStep(tokenDocument, movementData, operation) {
     const tokenId = tokenDocument.id;
+    if(window.bunnyHopDebug){	//debug
+        window.bunnyHopDebug_tokenDocument = tokenDocument;
+        window.bunnyHopDebug_movementDatamovementData;
+        window.bunnyHopDebug_operation = operation;
+    }
 
     // 如果该 Token 正在执行自己的 document.update，放行
     if (_updatingTokens.has(tokenId)) {
-        return; // 返回 undefined，允许更新
+        return; 
+    }
+
+    // 不是用户拖拽发起的移动，放行
+    if (Object.values(operation.movement)[0].method !== "dragging") {
+        return; 
     }
 
     // 如果该 Token 正在播放动画，阻止新移动
@@ -246,9 +256,18 @@ Hooks.once('ready', () => {
 	});
     console.log(`✅ bunny-hop.Socket 事件 ${SOCKET_EVENT} 监听已注册`);
 
+    
     // 注册钩子
     Hooks.off("preMoveToken", handleTokenMoveStep); // 清除旧监听
 	Hooks.on("preMoveToken", handleTokenMoveStep);
     console.log('✅ bunny-hop 模组已加载。');
 
 });
+
+
+
+
+
+
+
+
