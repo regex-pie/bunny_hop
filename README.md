@@ -3,8 +3,8 @@
 
 ![项目演示](示例动画.gif)
 
-##快速使用 
+## 快速使用 
 1. 前往FVTT后台的插件模组界面。
 2. 点击“安装模组”。
-3. 将以下内容粘贴到**清单地址**：https://github.com/regex-pie/bunny_hop/edit/main/README.md
+3. 将以下内容粘贴到**清单地址**：https://github.com/regex-pie/bunny_hop/releases/latest/download/module.json
 5. 在您的世界中，请在模组配置中启用该模组。
