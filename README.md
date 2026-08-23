@@ -7,4 +7,4 @@
 1. 前往FVTT后台的“插件模组”界面。
 2. 点击“安装模组”。
 3. 将以下内容粘贴到**清单地址**：https://github.com/regex-pie/bunny_hop/releases/latest/download/module.json
-5. 在您的世界中，打开模组配置并于其中启用该模组。
+5. 在您的世界中启用该模组。
