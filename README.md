@@ -1,5 +1,5 @@
 # Bunny Hop  
-用于FVTT平台的模组，可以让你的Token像兔子一样移动。
+用于FVTT平台的模组，可以让Token像兔子一样移动。
 
 <img src="示例动画.gif" alt="示例" width="400" height="300" />
 
