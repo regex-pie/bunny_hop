@@ -198,7 +198,7 @@ function handleTokenMoveStep(tokenDocument, movementData, operation) {
             // 动画完成后，更新 document 到终点
             if(window.bunnyHopDebug) console.log("🔄 动画完成,更新 document 到终点...");
             _updatingTokens.add(tokenId);   
-            token.document.update({ x: lastPoint.x, y: lastPoint.y },{ animate: false })
+            token.document.move({x: lastPoint.x, y: lastPoint.y},{animate: false, constrainOptions: {ignoreWalls: true}})
             .then(() => {
                 if(window.bunnyHopDebug) console.log("✅ document 已同步");
             }).catch(err => {
